@@ -4,7 +4,8 @@ A app made with **VanilaJs** using an mock api from [https://funtranslations.com
 
 # Preview
 
-![banana](https://user-images.githubusercontent.com/66691162/215669700-0b689c50-a577-44f9-a8ac-c69a0446d222.png)
+  ![banana](https://user-images.githubusercontent.com/66691162/215670262-cfba84fc-08f8-4871-850c-f9dcc55c72ae.png)
+
 
 ## TechStack
 
