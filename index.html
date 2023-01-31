@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Talk</title>
+
+    <!-- style -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+NKo&display=swap');
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Noto Sans NKo', sans-serif;
+        }
+
+        :root {
+            --primary-color: yellow;
+            --secodary-color: #44403c;
+            --border-color: cornsilk;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            width: 95vw;
+            margin: auto;
+        }
+
+        /* Navbar section */
+
+        #navbar {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 0rem 0rem 1rem 1rem;
+            border-bottom: 2px solid var(--border-color);
+            box-shadow: 1px 1px 1rem 2px grey;
+        }
+        
+        #navbar #navbar-heading {
+            font-weight: 500;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+
+        /* Header Section */
+
+        #header .header-img {
+            height: 10rem;
+            margin: 2rem;
+        }
+
+        /* Main Section */
+
+        #text-input {
+            margin: 2rem 0rem;
+            width: 80vw;
+            height: 7rem;
+            text-align: center;
+            padding: 1rem 0rem;
+            font-family: cursive;
+        }
+
+        #btn-translator {
+            font-size: large;
+            font-weight: bold;
+            display: block;
+            margin: 2rem auto;
+            padding: 0.5rem 2rem;
+            border: 2px solid var(--border-color);
+            border-radius: 0.5rem;
+            background-color: var(--primary-color);
+            box-shadow: 1px 1px 1rem 2px grey;
+        }
+
+        #btn-translator+div {
+            margin: 2rem auto;
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: cursive;
+            color: var(--secodary-color);
+        }
+
+        #translated-output {
+            width: 80vw;
+            height: 7rem;
+            border: 1px solid grey;
+            text-align: center;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        /* Footer Section */
+
+        #footer {
+            background-color: var(--primary-color);
+            padding: 1rem;
+            border-radius: 1rem 1rem 0rem 0rem;
+            border-top: 2px solid var(--border-color);
+            box-shadow: 1px 1px 1rem 2px grey;
+            margin-top: 3rem;
+        }
+
+        #footer h1 {
+            font-weight: 500;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+        
+        #footer p {
+            font-family: cursive;
+            font-weight: bold;
+            color: var(--secodary-color);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+
+    <nav id="navbar">
+        <h1 id="navbar-heading">BANANA TALK</h1>
+    </nav>
+
+    <!-- Header Section -->
+
+    <Header id="header">
+        <img class="header-img" src="./images/hero.svg" alt="">
+    </Header>
+
+    <!-- Main Section -->
+
+    <textarea id="text-input" placeholder="Put your message here 👇 which you want to convert to banana language"></textarea>
+    <button id="btn-translator">TRANSLATE TO BANANA 🍌</button>
+    <div>Translation will come here 👇</div>
+    <div id="translated-output"></div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <h1>About</h1>
+        <P>Are you a fan of minions? Did you know that the gibberish they say is an actual language.Use the
+            translator to convert your text from English to Minion speak or Banana language.</P>
+    </div>
+
+    <!-- script Section -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
